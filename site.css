@@ -1,0 +1,67 @@
+html {
+  font-family: "Lexend", Verdana, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #333333;
+  background-color: white;
+}
+
+p, ol, ul, dl, menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  padding-right: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #700939;
+}
+a:hover {
+  color: #a00c51;
+  text-decoration: underline;
+}
+a:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+body {
+  background-color: white;
+  background-image: url(img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position-x: left 400px;
+  background-position-y: 40px;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+article {
+  display: inline-block;
+  background-color: #ffffffd7;
+  padding: 2rem;
+  margin: 100px;
+}
+
+section.about-me {
+  margin-bottom: 2rem;
+}
