@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <link href="../site.css" rel="stylesheet" />
+    <title>POST TITLE — Ruby E. Stephens</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cinzel+Decorative:wght@700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+  </head>
+  <body>
+
+    <nav class="site-nav">
+      <a href="../" class="nav-logo">Ruby E. Stephens</a>
+                        <ul class="nav-links">
+        <li class="nav-dropdown">
+          <a href="../#research">Research</a>
+          <ul class="dropdown-menu">
+            <li><a href="../pollination/">Pollination</a></li>
+            <li><a href="../renewables/">Renewables</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <a href="../#writing">Writing &amp; outreach</a>
+          <ul class="dropdown-menu">
+            <li><a href="../blog/">Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="../#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </nav>
+
+    <main class="blog-post-page">
+      <article class="blog-post-full">
+
+        <header class="post-header">
+          <p class="post-back"><a href="../blog/">← Blog</a></p>
+          <h1>POST TITLE</h1>
+          <p class="post-date-full">Month Year</p>
+          <!-- Optional: add a lead image below -->
+          <!-- <img src="../img/your-image.jpg" alt="Description" class="post-hero-img"> -->
+        </header>
+
+        <div class="post-body">
+
+          <p>
+            Your first paragraph goes here.
+          </p>
+
+          <p>
+            Second paragraph. You can use <em>italics</em>, <strong>bold</strong>,
+            and <a href="https://example.com">links</a> as normal HTML.
+          </p>
+
+          <!-- To add a photo inline:
+          <figure class="post-figure">
+            <img src="../img/your-image.jpg" alt="Description of image">
+            <figcaption>Caption text here.</figcaption>
+          </figure>
+          -->
+
+          <p>
+            Keep going...
+          </p>
+
+        </div>
+
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-waratah">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350.48 241.75" width="48" height="33">
+            <path fill="#bb0a10" d="M176.57,0c11.75,20.51,20.46,42.09,24.15,65.52,3.16,20.05,2.67,39.94-5.38,58.83-3.62,8.5-9.05,16.24-13.69,24.31-1.35,2.35-2.72,2.42-4.48,.19-18.65-23.6-30.91-49.64-30.36-80.47,.43-24.24,10.08-44.92,25.06-63.43,1.18-1.45,2.39-2.88,3.62-4.28,.23-.26,.62-.39,1.09-.67Z"/>
+            <path fill="#bb0a10" d="M310.11,34.47c6.19,32.95,.32,61.98-24.24,85.61-15.27,14.69-33.98,23.32-54.01,29.14-9.41,2.74-19.11,4.47-28.69,6.62-.47,.11-1.01-.11-2.09-.26,15.5-10.07,28.56-21.92,38.86-36.65,12.22-17.48,19.59-36.87,22.13-58.05,.44-3.64,1.81-6.05,4.76-8.23,11.14-8.24,22.97-14.87,36.78-17.37,1.94-.35,3.92-.5,6.5-.82Z"/>
+            <path fill="#bb0a10" d="M154.63,153.79c-7.5-1.67-15.07-3.08-22.48-5.07-20.81-5.6-40.59-13.56-57.55-27.27-27.02-21.83-38.56-50.27-35.47-84.8,.03-.37,.08-.75,.18-1.11,.07-.22,.26-.41,.56-.87,7.68,.25,15.21,2.25,22.02,5.76,9.47,4.88,18.5,10.64,27.61,16.2,1.19,.73,2.21,2.42,2.51,3.84,8.09,38.2,28.62,68.01,60.41,90.28,.88,.61,1.71,1.28,2.57,1.92l-.36,1.12Z"/>
+            <path fill="#bb0a10" d="M176.62,241.75c-21.01-21.38-25.66-51.09-10.03-74.58,1.44-2.16,3.16-4.21,5.05-5.98,4.75-4.47,10.81-4.14,15.14,.79,6.3,7.17,9.02,15.98,10.68,25.11,3.92,21.58-2.29,39.62-19.29,53.71-.38,.32-.78,.62-1.19,.9-.09,.06-.24,.03-.37,.04Z"/>
+          </svg>
+        </div>
+        <p class="footer-name">Ruby E. Stephens</p>
+        <p class="footer-copy">Ecologist · Dharug Country, Australia</p>
+        <p class="footer-copy small"><a href="https://github.com/rubysaltbush/rubysaltbush.github.io">Source on GitHub</a></p>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    </script>
+
+  </body>
+</html>
