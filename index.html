@@ -5,112 +5,238 @@
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <meta content='#ffffff' name='theme-color'>
+    <link href="normalize.css" rel="stylesheet" />
     <link href="site.css" rel="stylesheet" />
     <title>Ruby E. Stephens</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Raleway&display=swap" rel="stylesheet"> 
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cinzel+Decorative:wght@700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
   </head>
-  <body class=main>
+  <body>
 
-    <article>
-      <header>
-        <h1 class='page-title'>Ruby E. Stephens</h1>
-        <em>plants, bees, flowers, pollination, ecology, evolution</em>
-      </header>
+    <!-- NAV -->
+    <nav class="site-nav">
+      <a href="#about" class="nav-logo">Ruby E. Stephens</a>
+      <ul class="nav-links">
+        <li class="nav-dropdown">
+          <a href="#research">Research</a>
+          <ul class="dropdown-menu">
+            <li><a href="pollination/">Pollination</a></li>
+            <li><a href="renewables/">Renewables</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <a href="#writing">Writing &amp; outreach</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog/">Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </nav>
 
-      <section class='about-me'>
+    <!-- HERO -->
+    <section class="hero" id="about">
+      <div class="hero-img-col">
+        <div class="hero-photo-wrap">
+          <img src="img/2023_Ruby_bushwalking_Erskine_Creek_Blue_Mountains_photo_by_Katy_Wilkins.jpeg"
+               alt="Ruby at Erskine Creek, Blue Mountains (photo: Katy Wilkins)"
+               class="hero-photo">
+        </div>
+      </div>
+      <div class="hero-text-col">
+        <h1 class="hero-name">Dr <span class="cinzel-deco">R</span>uby E. Stephens</h1>
+        <p class="hero-tagline">plants &middot; bees &middot; flowers &middot; pollination &middot; ecology &middot; evolution &middot; renewables</p>
+        <p class="hero-intro">
+          I am an Australian ecologist researching plants and their pollinators, from the birds and the bees to beetles and bats.
+          My work combines rigorous data science and immersive field observation,
+          and I believe science should be open, reproducible, and shared widely.
+        </p>
+        <p class="hero-intro">
+          I live on <a href="https://dharug.dalang.com.au/plugin_wiki/page/introduction">Dharug land</a> near Sydney.
+          I bushwalk, garden, read, and write.
+        </p>
+        <div class="hero-links">
+          <a href="https://scholar.google.com/citations?user=KfFjSzwAAAAJ&hl=en" class="btn">Publications</a>
+          <a href="https://github.com/rubysaltbush" class="btn btn-outline">Code on GitHub</a>
+        </div>
+      </div>
+    </section>
 
-        <p>
+    <!-- RESEARCH -->
+    <section class="section" id="research">
+      <div class="section-inner">
+        <h2 class="section-title">Research</h2>
+        <p class="section-lead">
+          My diverse research interests span the ecology and evolution of plants and pollinators,
+          and the conservation of native biodiversity.
+          I like to test common assumptions with high-quality data and reproducible analyses,
+          and ground-truth these tests in the field.
+          See my <a href="https://scholar.google.com/citations?user=KfFjSzwAAAAJ&hl=en">full publication list</a>
+          and <a href="https://github.com/rubysaltbush">code</a> on Google Scholar and GitHub.
+        </p>
+        <div class="project-tiles">
+          <a href="pollination/" class="project-tile">
+            <img src="img/Leioproctus_native_bee_on_Leptospermum.jpg"
+                 alt="Leioproctus native bee on Leptospermum" class="tile-img">
+            <div class="tile-body">
+              <div class="tile-title">Pollination research</div>
+              <p class="tile-meta">pollination · macroecology · macroevolution · AusTraits</p>
+              <span class="tile-arrow">Read more →</span>
+            </div>
+          </a>
+          <a href="renewables/" class="project-tile">
+            <img src="img/2025_sunset_on_central_west_NSW_wind_farm.jpg"
+                 alt="Sunset over wind farm, central west NSW" class="tile-img">
+            <div class="tile-body">
+              <div class="tile-title">Renewables &amp; biodiversity research</div>
+              <p class="tile-meta">ecoacoustics · field ecology · applied conservation</p>
+              <span class="tile-arrow">Read more →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-        I research ecology. Read my <a href="https://scholar.google.com/citations?user=KfFjSzwAAAAJ&amp;hl=en">papers</a>,
-        <a href="https://github.com/rubysaltbush">R code</a> and
-        <a href="https://rubyestephens.com/research/">research summary</a>.
-        
-        <p>
+    <!-- FLORA STRIP -->
+    <div class="flora-strip">
+      <img src="img/Boronia_pinnata_Kuringgai_National_park.jpg" alt="" class="strip-img">
+      <img src="img/Acacia_suaveolens_Nattai_National_Park.jpg" alt="" class="strip-img">
+      <img src="img/Pimelea_Stirling_Ranges_WA.jpg" alt="" class="strip-img">
+      <img src="img/Comesperma_ericinum__Kuringgai_National_park.jpg" alt="" class="strip-img">
+      <img src="img/Patersonia_glabrata_Blue_Mountains_National_Park.jpg" alt="" class="strip-img">
+      <img src="img/Eucalyptus_preissiana_Stirling_Ranges_WA.jpg" alt="" class="strip-img">
+    </div>
 
-        My <a href="https://doi.org/10.25949/26794234.v1">PhD</a> examined the evolution and ecology of flowers and pollination.
+    <!-- WRITING & OUTREACH -->
+    <section class="section section-alt" id="writing">
+      <div class="section-inner">
+        <h2 class="section-title">Writing &amp; outreach</h2>
+        <p class="section-lead">
+          I believe science should reach beyond journals. I write for rigorous peer-reviewed publications and also for general audiences, and am happy to share my science in the form of public talks, interviews and even science comedy performances.
+        </p>
+        <ul class="outreach-list">
+          <li>✍️ <a href="https://theconversation.com/the-worlds-first-flowers-were-pollinated-by-insects-206988">The world's first flowers were pollinated by insects</a> — The Conversation</li>
+          <li>🎙 <a href="https://eastsidefm.org/podcast/understanding-the-secret-language-of-plants/">Understanding the Secret Language of Plants</a> — East Side FM podcast</li>
+          <li>🎤 <a href="https://vimeo.com/738163004">How was the ancestor of all flowers pollinated?</a> — 3 Minute Thesis</li>
+          <li>🌿 <a href="https://vimeo.com/852422050">Flowers are the sexiest plant part</a> — science stand-up comedy with The STEAM Room</li>
+        </ul>
+        <div class="writing-lower">
+          <div class="blog-area">
+            <h3 class="writing-subhead">Blog</h3>
+            <article class="blog-post-preview">
+              <h3><a href="blog/2026-05-A-human-on-the-internet.html">A human on the internet</a></h3>
+              <p class="post-date">May 2026</p>
+              <p>A blog? Does anyone blog anymore?? Isn’t that incredibly outdated??? I hear you, dear loud-thinking reader. I hear you, but lately I’ve been thinking...</p>
+            </article>
+            <p style="margin-top:1rem;font-size:0.9rem;"><a href="blog/">→ All posts</a></p>
+            <!-- TO ADD A POST: add a new article block above (most recent first), then add to blog/index.html -->
+          </div>
+          <div class="comedy-photo-wrap">
+            <img src="img/2023_Ruby_performing_science_comedy_Enmore_Theatre_Sydney_photo_by_the_STEAM_Room_photographer.jpg"
+                 alt="Ruby performing science comedy at the Enmore Theatre, Sydney (photo: The STEAM Room)"
+                 class="comedy-photo">
+            <p class="comedy-caption">The STEAM Room, Enmore Theatre, Sydney Comedy Festival 2023 (photo: The STEAM Room)</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <p>
-          
-        My postdoc explores biodiversity on Australian wind and solar farms.
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section-inner contact-inner">
+        <div class="contact-text">
+          <h2 class="section-title">Get in Touch</h2>
+          <p>
+            Whether you're a research collaborator, a journalist or a prospective student, please feel free to reach out. 
+            I'm always happy to chat about ecology, science and the natural world.
+          </p>
+          <table class="contact-table">
+            <tbody>
+              <tr>
+                <th>Email</th>
+                <td>stephenseruby <strong>at</strong> gmail.com</td>
+              </tr>
+              <tr>
+                <th>Scholar</th>
+                <td><a href="https://scholar.google.com/citations?user=KfFjSzwAAAAJ&hl=en">Ruby E Stephens</a></td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td><a href="https://github.com/rubysaltbush">rubysaltbush</a></td>
+              </tr>
+              <tr>
+                <th><span style="text-transform:none">i</span>Naturalist</th>
+                <td><a href="https://www.inaturalist.org/people/2091535">rubyestephens</a></td>
+              </tr>
+              <tr>
+                <th>LinkedIn</th>
+                <td><a href="https://www.linkedin.com/in/ruby-stephens-1a4484125/">Ruby Stephens</a></td>
+              </tr>
+              <tr>
+                <th>Bluesky</th>
+                <td><a href="https://bsky.app/profile/rubyecology.bsky.social">rubyecology</a></td>
+              </tr>
+              <tr>
+                <th>Hardcover</th>
+                <td><a href="https://hardcover.app/@ruby_saltbush">ruby_saltbush</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="contact-field-photo">
+          <img src="img/2023_Ruby_sampling_pollinator_network_Rocky_Mountain_Biological_Laboratory_photo_by_Annie_Colgan.jpg"
+               alt="Ruby sampling pollinator networks at Rocky Mountain Biological Laboratory (photo: Annie Colgan)"
+               class="field-photo">
+          <p class="field-caption">Sampling pollinator networks, Rocky Mountain Biological Laboratory, 2023 (photo: Annie Colgan)</p>
+        </div>
+      </div>
+    </section>
 
-        <p>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-waratah">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350.48 241.75" width="48" height="33">
+            <path fill="#bb0a10" d="M176.57,0c11.75,20.51,20.46,42.09,24.15,65.52,3.16,20.05,2.67,39.94-5.38,58.83-3.62,8.5-9.05,16.24-13.69,24.31-1.35,2.35-2.72,2.42-4.48,.19-18.65-23.6-30.91-49.64-30.36-80.47,.43-24.24,10.08-44.92,25.06-63.43,1.18-1.45,2.39-2.88,3.62-4.28,.23-.26,.62-.39,1.09-.67Z"/>
+            <path fill="#bb0a10" d="M310.11,34.47c6.19,32.95,.32,61.98-24.24,85.61-15.27,14.69-33.98,23.32-54.01,29.14-9.41,2.74-19.11,4.47-28.69,6.62-.47,.11-1.01-.11-2.09-.26,15.5-10.07,28.56-21.92,38.86-36.65,12.22-17.48,19.59-36.87,22.13-58.05,.44-3.64,1.81-6.05,4.76-8.23,11.14-8.24,22.97-14.87,36.78-17.37,1.94-.35,3.92-.5,6.5-.82Z"/>
+            <path fill="#bb0a10" d="M154.63,153.79c-7.5-1.67-15.07-3.08-22.48-5.07-20.81-5.6-40.59-13.56-57.55-27.27-27.02-21.83-38.56-50.27-35.47-84.8,.03-.37,.08-.75,.18-1.11,.07-.22,.26-.41,.56-.87,7.68,.25,15.21,2.25,22.02,5.76,9.47,4.88,18.5,10.64,27.61,16.2,1.19,.73,2.21,2.42,2.51,3.84,8.09,38.2,28.62,68.01,60.41,90.28,.88,.61,1.71,1.28,2.57,1.92l-.36,1.12Z"/>
+            <path fill="#bb0a10" d="M176.62,241.75c-21.01-21.38-25.66-51.09-10.03-74.58,1.44-2.16,3.16-4.21,5.05-5.98,4.75-4.47,10.81-4.14,15.14,.79,6.3,7.17,9.02,15.98,10.68,25.11,3.92,21.58-2.29,39.62-19.29,53.71-.38,.32-.78,.62-1.19,.9-.09,.06-.24,.03-.37,.04Z"/>
+          </svg>
+        </div>
+        <p class="footer-name">Ruby E. Stephens</p>
+        <p class="footer-copy">Ecologist · Dharug Country, Australia</p>
+        <p class="footer-copy small">
+          All photos by Ruby E. Stephens unless otherwise noted ·
+          <a href="https://github.com/rubysaltbush/rubysaltbush.github.io">Source on GitHub</a>, website layout with help from Claude
+        </p>
+      </div>
+    </footer>
 
-        I've <a href="https://www.linkedin.com/in/ruby-stephens-1a4484125/">worked</a> as a bush regenerator and ecological consultant.
-
-        <p>
-
-        I live near Sydney on <a href="https://en.wikipedia.org/wiki/Darug">Dharug land</a>.
-
-        <p>
-
-        I bushwalk.
-
-        <p>
-
-        I garden.
-
-        <p>
-
-        I <a href="https://www.goodreads.com/user/show/58047223-ruby-stephens">read</a>.
-
-        <p>
-
-        I write.
-
-
-      </section>
-
-      <section class='contact-details'>
-        <table>
-          <tbody>
-            <tr>
-              <th>Email</th>
-              <td>
-                stephenseruby <b>||at||</b> gmail.com
-              </td>
-            </tr>
-            <tr>
-              <th>Bluesky</th>
-              <td>
-                <a href="https://bsky.app/profile/rubyecology.bsky.social">rubyecology</a>
-              </td>
-            </tr>
-            <tr>
-              <th>Scholar</th>
-              <td>
-                <a href="https://scholar.google.com/citations?user=KfFjSzwAAAAJ&hl=en">Ruby E Stephens</a>
-              </td>
-            </tr>
-            <tr>
-              <th>GitHub</th>
-              <td>
-                <a href="https://github.com/rubysaltbush">rubysaltbush</a>
-              </td>
-            </tr>
-            <tr>
-              <th>LinkedIn</th>
-              <td>
-                <a href="https://www.linkedin.com/in/ruby-stephens-1a4484125/">Ruby Stephens</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-      </section>
-    </article>
+    <script>
+      const toggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => navLinks.classList.remove('open'));
+      });
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    </script>
 
   </body>
 </html>
-
